@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Chakra+Petch:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --font-primary: 'Rubik'. sans-serif;
+    --font-secundary: 'Chakra Petch', sans-serif;
+
+    --black: #212121;
+    --white_primary: #f5f5f5;
+    --white_second: #f8f5f5;
+    --white_third: #FAF9F6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

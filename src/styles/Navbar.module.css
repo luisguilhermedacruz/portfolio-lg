@@ -1,60 +1,75 @@
-@import url('../styles/global.css');
+@import url("../styles/global.css");
 
-.navbar_container{
-    padding:0;
-    margin: 0;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    top: 0;
-    left:0;
-    width: 100%;
-    z-index: 1000;
-    background-color: var(--white_third);
-    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1); 
-    
+.navbar_container {
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--white_third);
+  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
 }
 
-.menu_icon{
-    width: 8rem;
-    height: 4rem;
-    margin: 0;
-    padding: 0;
-    color: var(--black);
+.menu_icon {
+  width: 8rem;
+  height: 4rem;
+  margin: 0;
+  padding: 0;
+  color: var(--black);
 }
 
-.navbar_container h1{
-    font-family: var(--font-primary);
-    font-size: 3rem;
-    color: var(--black);
-    margin: 0 0 0 1.5rem
+.navbar_container h1 {
+  font-family: var(--font-primary);
+  font-size: 3rem;
+  color: var(--black);
+  margin: 0 0 0 1.5rem;
 }
 
-.navbar_container h2{
+.text_title {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navbar_container h1 {
     display: none;
-}
+  }
 
-@media( min-width: 992px){
-    
-    .navbar_container h1{
-        display: none;
-    }
+  .text_title {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 0;
+  }
 
-    .navbar_container h2{
+  .navbar_container h2 {
     font-family: var(--font-primary);
     font-size: 3rem;
     color: var(--black);
-    margin: 0 0 0 1.5rem
-    }
+    margin: 0 0 0 1.5rem;
+    padding: 0;
+    line-height: 1;
+  }
 
-    .menu_icon{
+  .navbar_container h3 {
+    font-family: var(--font-second);
+    font-weight: 300;
+    font-size: 1rem;
+    color: var(--black);
+    margin: 0 0 0 1.5rem;
+    padding: 0;
+  }
+
+  .menu_icon {
     width: 15rem;
     height: 6rem;
     margin: 0;
     padding: 0;
     color: var(--black);
-    }
-
+  }
 }

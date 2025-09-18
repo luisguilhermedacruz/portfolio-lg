@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Chakra+Petch:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --font-primary: 'Rubik'. sans-serif;
+    --font-primary: 'Rubik', sans-serif;
     --font-secundary: 'Chakra Petch', sans-serif;
 
     --black: #212121;

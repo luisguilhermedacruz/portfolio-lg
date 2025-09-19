@@ -1,0 +1,10 @@
+{
+  "navbar": {
+    "role": "DESENVOLVEDOR BACK-END",
+    "home": "INÍCIO",
+    "about": "SOBRE",
+    "projects": "PROJETOS",
+    "skills": "HABILIDADES",
+    "contact": "CONTATO"
+  }
+}

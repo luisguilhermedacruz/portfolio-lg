@@ -1,75 +1,152 @@
 @import url("../styles/global.css");
 
 .navbar_container {
-  padding: 0;
-  margin: 0;
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background-color: var(--white_third);
-  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
+padding: 0;
+margin: 0;
+justify-content: space-between;
+align-items: center;
+display: flex;
+flex-direction: row;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 1000;
+background-color: var(--white_third);
+box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
 }
 
 .menu_icon {
-  width: 8rem;
-  height: 4rem;
-  margin: 0;
-  padding: 0;
-  color: var(--black);
+width: 8rem;
+height: 4rem;
+margin: 0;
+padding: 0;
+color: var(--black);
 }
 
-.navbar_container h1 {
-  font-family: var(--font-primary);
-  font-size: 3rem;
-  color: var(--black);
-  margin: 0 0 0 1.5rem;
+.title_name_mobile{
+font-family: var(--font-primary);
+font-size: 3rem;
+color: var(--black);
+margin: 0 0 0 1.5rem;
 }
 
-.text_title {
-  display: none;
+.text_title_desktop {
+display: none;
+}
+
+.nav_links{
+display: none;
+}
+
+/* ------------------------------------- */
+/* ESTILOS DO DROPDOWN SELETOR DE IDIOMA */
+/* ------------------------------------- */
+
+.language_selector {
+    position: relative; /* Base de posicionamento para o menu */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 4px;
+    user-select: none;
+    color: var(--black); 
+    transition: background-color 0.2s;
+    margin:0;
+    font-family: var(--font-second);
+  }
+
+.language_selector:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.current_lang {
+    font-weight: bold;
+    margin-right: 5px;
+    font-size: 0.9rem;
+    
+}
+
+.dropdown_icon {
+    font-size: 1rem;
+}
+
+.dropdown_menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 60px;
+    background-color: var(--white_third);
+    z-index: 10;
+    margin-top:0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.dropdown_item {
+    padding: 8px 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: var(--black);
+    text-align: center;
+    font-weight: bold;
 }
 
 @media (min-width: 768px) {
-  .navbar_container h1 {
-    display: none;
-  }
+.title_name_mobile {
+display: none;
+}
 
-  .text_title {
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-    padding: 0;
-  }
+.text_title_desktop {
+display: flex;
+flex-direction: column;
+text-align: justify;
+padding: 0;
+}
 
-  .navbar_container h2 {
-    font-family: var(--font-primary);
-    font-size: 3rem;
-    color: var(--black);
-    margin: 0 0 0 1.5rem;
-    padding: 0;
-    line-height: 1;
-  }
+.navbar_container h2 {
+font-family: var(--font-primary);
+font-size: 1.5rem;
+color: var(--black);
+margin: 0 0 0 1.5rem;
+padding: 0;
+line-height: 1;
+}
 
-  .navbar_container h3 {
-    font-family: var(--font-second);
-    font-weight: 300;
-    font-size: 1rem;
-    color: var(--black);
-    margin: 0 0 0 1.5rem;
-    padding: 0;
-  }
+.navbar_container h3 {
+font-family: var(--font-secundary);
+font-weight: 300;
+font-size: 0.7rem;
+color: var(--black);
+margin: 0 0 0 1.5rem;
+padding: 0;
+}
 
-  .menu_icon {
-    width: 15rem;
-    height: 6rem;
-    margin: 0;
-    padding: 0;
-    color: var(--black);
+.nav_links{
+display: flex;
+flex-direction: row;
+gap: 4px;
+font-family: var(--font-secundary);
+}
+
+.menu_icon {
+width: 10rem;
+height: 3.3rem;
+margin: 0;
+padding: 0;
+color: var(--black);
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  margin: 0;
   }
+  
+  .language_selector {
+        margin:0;
+    }
 }

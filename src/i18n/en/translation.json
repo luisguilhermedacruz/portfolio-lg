@@ -1,0 +1,10 @@
+{
+  "navbar": {
+    "role": "BACK-END DEVELOPER",
+    "home": "HOME",
+    "about": "ABOUT",
+    "projects": "PROJECTS",
+    "skills": "SKILLS",
+    "contact": "CONTACT"
+  }
+}
